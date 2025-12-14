@@ -1,0 +1,17 @@
+using UnityEditor.ShaderGraph.Internal;
+using UnityEngine;
+
+namespace GridWorld.Generation
+{
+    public abstract class SettingsBase : MonoBehaviour
+    {
+        public abstract float GetUnitSize();
+
+        public float GetUnityScale() => GetUnitSize();
+
+        public virtual Vector3 GetMaxPhysicalSize()
+        {
+            return Vector3.one * GetUnitSize();
+        }
+    }
+}

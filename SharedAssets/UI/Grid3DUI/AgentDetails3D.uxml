@@ -1,0 +1,56 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/SharedAssets/UI/Grid3DUI/Styling/AgentDetails3D.uss?fileID=7433441132597879392&amp;guid=35209d7e9b47c2541b2a62f9677674ea&amp;type=3#AgentDetails3D" />
+    <ui:VisualElement name="AgentObservationContainer" class="border shadow observation_container" style="height: auto; min-height: 0; width: 10%; max-width: 700px; min-width: 600px;">
+        <ui:VisualElement name="ContainerHeader" class="container_header">
+            <ui:VisualElement name="HeaderNameWrapper">
+                <ui:Label text="Details of No Agent Placeholder" name="HeaderName" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ModuleControlContainer" class="module_control">
+                <ui:VisualElement name="ControlActionIcon" />
+                <ui:Label text="Hide" name="ControlActionName" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ContainerContent" style="flex-grow: 1;">
+            <ui:VisualElement class="horizontal_divider" />
+            <ui:VisualElement name="AgentDetailsContentWrapper" style="background-color: rgb(53, 49, 49);">
+                <ui:VisualElement name="LifetimeLengthWrapper">
+                    <ui:Label text="Episode: 100" name="EpisodeLabel" />
+                    <ui:Label text="Current Step: 1000000" name="StepLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement class="horizontal_divider" />
+                <ui:Label text="Cumulative Reward: -0.591239231232193213" name="CumulativeRewardLabel" class="text_size_bigger justify_text_center" />
+                <ui:VisualElement class="horizontal_divider" />
+                <ui:Label text="Environment Parameters" name="EnvironmentParametersHeaderLabel" class="justify_text_center text_size_bigger" />
+                <ui:VisualElement name="EnvironmentParametersWrapper">
+                    <ui:Label text="Size (width, height, length): (10, 10, 10)" name="GridSizeLabel" />
+                    <ui:Label text="Density: 30%" name="DensityLevelLabel" />
+                    <ui:Label text="Map Type: RandomGenerationMap" name="GenerationMethodLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement class="horizontal_divider" />
+                <ui:VisualElement name="DirectionsObservationWrapper">
+                    <ui:Label text="Current Observation" name="ObservationHeaderLabel" class="justify_text_center text_size_bigger" />
+                    <ui:VisualElement name="HorizontalWrapper">
+                        <ui:Label text="Above: bla bla ble" name="RayUpLabel" />
+                        <ui:Label text="Front: blasd aldsad asd lasd" name="RayFrontLabel" />
+                        <ui:Label text="Below: blabbl abla l a" name="RayDownLabel" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="HorizontalWrapper">
+                        <ui:Label text="Left: fjkldsgljkdsjgklsdf" name="RayLeftLabel" />
+                        <ui:Label text="Back: dfksljgkldsjglkds" name="RayBackLabel" />
+                        <ui:Label text="Right: fsajfklasjfl" name="RayRightLabel" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="HorizontalWrapper">
+                        <ui:Label text="Distance X: 1.2421321" name="NormalizedXDistanceLabel" />
+                        <ui:Label text="Distance Y: -0.79" name="NormalizedYDistanceLabel" />
+                        <ui:Label text="Distance Z: 4i214213213" name="NormalizedZDistanceLabel" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="horizontal_divider" />
+                <ui:Label text="Action History" name="ActionLogHeaderLabel" class="justify_text_center text_size_bigger" />
+                <ui:VisualElement name="ActionHistoryWrapper">
+                    <ui:ListView name="ActionHistoryList" selection-type="None" enabled="true" fixed-item-height="70" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

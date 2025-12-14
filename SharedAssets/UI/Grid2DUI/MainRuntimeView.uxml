@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="AgentListVIew" src="project://database/Assets/SharedAssets/UI/Grid2DUI/AgentListVIew.uxml?fileID=9197481963319205126&amp;guid=b28f04f177e063e4d86abd9281109be0&amp;type=3#AgentListVIew" />
+    <ui:Template name="AgentVisualObservation" src="project://database/Assets/SharedAssets/UI/Grid2DUI/AgentVisualObservation.uxml?fileID=9197481963319205126&amp;guid=0cbad2ba10904584f9c4050765dd464a&amp;type=3#AgentVisualObservation" />
+    <ui:Template name="AgentDetails" src="project://database/Assets/SharedAssets/UI/Grid2DUI/AgentDetails.uxml?fileID=9197481963319205126&amp;guid=2dee4d8a3ca86ea40a58c10531cce2f8&amp;type=3#AgentDetails" />
+    <Style src="project://database/Assets/SharedAssets/UI/Grid2DUI/Styling/MainViewRuntime.uss?fileID=7433441132597879392&amp;guid=e0e6d8b678996384eb7ae44192b5c084&amp;type=3#MainViewRuntime" />
+    <ui:VisualElement name="main_container" style="flex-grow: 1;">
+        <ui:Instance template="AgentListVIew" name="AgentList" class="upper_left" />
+        <ui:Instance template="AgentVisualObservation" name="AgentObservation" class="lower_left" />
+    </ui:VisualElement>
+    <ui:Instance template="AgentDetails" name="AgentDetails" class="upper_right" />
+</ui:UXML>

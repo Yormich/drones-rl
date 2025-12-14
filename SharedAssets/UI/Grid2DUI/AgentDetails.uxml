@@ -1,0 +1,50 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/SharedAssets/UI/Grid2DUI/Styling/AgentDetails.uss?fileID=7433441132597879392&amp;guid=4a960e5dde22caf46b2340afe5effc9c&amp;type=3#AgentDetails" />
+    <ui:VisualElement name="AgentObservationContainer" class="border shadow observation_container" style="height: auto; min-height: 0;">
+        <ui:VisualElement name="ContainerHeader" class="container_header">
+            <ui:VisualElement name="HeaderNameWrapper">
+                <ui:Label text="Details of No Agent Placeholder" name="HeaderName" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ModuleControlContainer" class="module_control">
+                <ui:VisualElement name="ControlActionIcon" />
+                <ui:Label text="Hide" name="ControlActionName" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ContainerContent" style="flex-grow: 1;">
+            <ui:VisualElement class="horizontal_divider" />
+            <ui:VisualElement name="AgentDetailsContentWrapper" style="background-color: rgb(53, 49, 49);">
+                <ui:VisualElement name="LifetimeLengthWrapper">
+                    <ui:Label text="Episode: 100" name="EpisodeLabel" />
+                    <ui:Label text="Current Step: 1000000" name="StepLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement class="horizontal_divider" />
+                <ui:Label text="Cumulative Reward: -0.591239231232193213" name="CumulativeRewardLabel" class="text_size_bigger justify_text_center" />
+                <ui:VisualElement class="horizontal_divider" />
+                <ui:Label text="Environment Parameters" name="EnvironmentParametersHeaderLabel" class="justify_text_center text_size_bigger" />
+                <ui:VisualElement name="EnvironmentParametersWrapper">
+                    <ui:Label text="Grid Size: 64 units" name="GridSizeLabel" />
+                    <ui:Label text="Num Obstacles: 128" name="NumObstaclesLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement class="horizontal_divider" />
+                <ui:VisualElement name="DirectionsObservationWrapper">
+                    <ui:Label text="Current Observation" name="ObservationHeaderLabel" class="justify_text_center text_size_bigger" />
+                    <ui:Label text="North: Obstacle" name="NorthObservationLabel" />
+                    <ui:VisualElement name="HorizontalWrapper">
+                        <ui:Label text="West: None" name="WestDirectionLabel" />
+                        <ui:Label text="East: Obstacle" name="EastDirectionLabel" />
+                    </ui:VisualElement>
+                    <ui:Label text="South: Obstacle" name="SouthObservationLabel" />
+                    <ui:VisualElement name="HorizontalWrapper">
+                        <ui:Label text="Distance X: 1.2421321" name="NormalizedXDistanceLabel" />
+                        <ui:Label text="Distance Y: -0.79" name="NormalizedYDistanceLabel" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="horizontal_divider" />
+                <ui:Label text="Action History" name="ActionLogHeaderLabel" class="justify_text_center text_size_bigger" />
+                <ui:VisualElement name="ActionHistoryWrapper">
+                    <ui:ListView name="ActionHistoryList" selection-type="None" enabled="true" fixed-item-height="70" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

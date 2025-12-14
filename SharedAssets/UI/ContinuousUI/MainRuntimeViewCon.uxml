@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="AgentListVIew" src="project://database/Assets/SharedAssets/UI/AgentListVIew.uxml?fileID=9197481963319205126&amp;guid=b28f04f177e063e4d86abd9281109be0&amp;type=3#AgentListVIew" />
+    <ui:Template name="AgentVisualObservationCon" src="project://database/Assets/SharedAssets/UI/ContinuousUI/AgentVisualObservationCon.uxml?fileID=9197481963319205126&amp;guid=fb2bea88a6a6e7d49836c7c56d254ea4&amp;type=3#AgentVisualObservationCon" />
+    <Style src="project://database/Assets/SharedAssets/UI/ContinuousUI/Styling/MainViewRuntimeCon.uss?fileID=7433441132597879392&amp;guid=788f07f92e1ac25439c0d348fe705306&amp;type=3#MainViewRuntimeCon" />
+    <ui:VisualElement name="main_container" style="flex-grow: 1;">
+        <ui:Instance template="AgentListVIew" name="AgentList" class="upper_left" />
+        <ui:Instance template="AgentVisualObservationCon" name="AgentObservation" class="lower_left" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/SharedAssets/UI/Grid2DUI/Styling/AgentListItem.uss?fileID=7433441132597879392&amp;guid=9e8d7f44b31df494aa9b8cc0c0f2c6ee&amp;type=3#AgentListItem" />
+    <ui:VisualElement name="AgentListItem">
+        <ui:Label text="Agent Placeholder Name" name="AgentName" />
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:Label text="Environment Location - (12.5, 0.0, -10.5)" name="AgentEnvironmentLocation" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

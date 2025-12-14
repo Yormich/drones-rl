@@ -1,0 +1,32 @@
+:root {
+    -unity-font-definition: resource('FlatSkin/Font/Roboto-Black');
+    color: rgb(243, 243, 243);
+}
+
+.upper_left {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.upper_right {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.lower_left {
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.lower_right {
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+#main_container {
+    flex-grow: 1;
+}

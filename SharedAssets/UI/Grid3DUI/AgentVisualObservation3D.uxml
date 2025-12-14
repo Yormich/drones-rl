@@ -1,0 +1,51 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/SharedAssets/UI/Grid3DUI/Styling/AgentVisualRepresentation3D.uss?fileID=7433441132597879392&amp;guid=b5b1ad20c978bf346bda182441bc0e6a&amp;type=3#AgentVisualRepresentation3D" />
+    <ui:VisualElement name="AgentObservationContainer" class="border shadow observation_container" style="max-height: 480px; height: auto; width: auto;">
+        <ui:VisualElement name="ContainerHeader" class="container_header">
+            <ui:VisualElement name="HeaderNameWrapper">
+                <ui:Label text="Visual Observation Of Agent 0" name="HeaderName" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ModuleControlContainer" class="module_control">
+                <ui:VisualElement name="ControlActionIcon" />
+                <ui:Label text="Hide" name="ControlActionName" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ContainerContent" style="min-height: auto;">
+            <ui:VisualElement class="horizontal_divider" />
+            <ui:VisualElement name="AgentCameraViewWrapper" style="flex-direction: row;">
+                <ui:VisualElement name="GodViewWrapper" style="flex-grow: 0; width: 30%;">
+                    <ui:VisualElement name="ViewWrapper" style="flex-grow: 1;">
+                        <ui:Label text="God&apos;s View" name="ObservationLabel" />
+                        <ui:VisualElement name="GodViewObservation" class="agent_camera_view" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SharedAssets/UI/Grid2DUI/Textures/Grid2DVisualObservationTexture.renderTexture?fileID=8400000&amp;guid=e553478b6775c32459fa0e474aaa7563&amp;type=2#Grid2DVisualObservationTexture&quot;);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="OtherObservationsWrapper">
+                    <ui:VisualElement name="OtherViewWrapper">
+                        <ui:Label text="Above" name="ObservationLabel" />
+                        <ui:VisualElement name="AboveViewObservation" class="agent_camera_view" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SharedAssets/UI/Grid2DUI/Textures/Grid2DVisualObservationTexture.renderTexture?fileID=8400000&amp;guid=e553478b6775c32459fa0e474aaa7563&amp;type=2#Grid2DVisualObservationTexture&quot;);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="OtherViewWrapper" style="flex-grow: 1;">
+                        <ui:Label text="Forward" name="ObservationLabel" />
+                        <ui:VisualElement name="ForwardViewObservation" class="agent_camera_view" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SharedAssets/UI/Grid2DUI/Textures/Grid2DVisualObservationTexture.renderTexture?fileID=8400000&amp;guid=e553478b6775c32459fa0e474aaa7563&amp;type=2#Grid2DVisualObservationTexture&quot;);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="OtherViewWrapper" style="flex-grow: 1;">
+                        <ui:Label text="Under" name="ObservationLabel" />
+                        <ui:VisualElement name="UnderViewObservation" class="agent_camera_view" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SharedAssets/UI/Grid2DUI/Textures/Grid2DVisualObservationTexture.renderTexture?fileID=8400000&amp;guid=e553478b6775c32459fa0e474aaa7563&amp;type=2#Grid2DVisualObservationTexture&quot;);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="OtherViewWrapper" style="flex-grow: 1;">
+                        <ui:Label text="Left" name="ObservationLabel" />
+                        <ui:VisualElement name="LeftViewObservation" class="agent_camera_view" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SharedAssets/UI/Grid2DUI/Textures/Grid2DVisualObservationTexture.renderTexture?fileID=8400000&amp;guid=e553478b6775c32459fa0e474aaa7563&amp;type=2#Grid2DVisualObservationTexture&quot;);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="OtherViewWrapper" style="flex-grow: 1;">
+                        <ui:Label text="Back" name="ObservationLabel" />
+                        <ui:VisualElement name="BackViewObservation" class="agent_camera_view" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SharedAssets/UI/Grid2DUI/Textures/Grid2DVisualObservationTexture.renderTexture?fileID=8400000&amp;guid=e553478b6775c32459fa0e474aaa7563&amp;type=2#Grid2DVisualObservationTexture&quot;);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="OtherViewWrapper" style="flex-grow: 1;">
+                        <ui:Label text="Right" name="ObservationLabel" />
+                        <ui:VisualElement name="RightViewObservation" class="agent_camera_view" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SharedAssets/UI/Grid2DUI/Textures/Grid2DVisualObservationTexture.renderTexture?fileID=8400000&amp;guid=e553478b6775c32459fa0e474aaa7563&amp;type=2#Grid2DVisualObservationTexture&quot;);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

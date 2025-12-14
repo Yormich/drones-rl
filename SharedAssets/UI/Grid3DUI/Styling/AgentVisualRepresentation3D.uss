@@ -1,0 +1,192 @@
+:root {
+    -unity-font-definition: resource('FlatSkin/Font/Roboto-Black');
+    color: rgb(243, 243, 243);
+}
+
+.observation_container {
+    align-items: center;
+    min-width: 500px;
+    width: 50%;
+    min-height: auto;
+    max-width: none;
+    max-height: 580px;
+    height: 50%;
+}
+
+.container_header {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 38, 38);
+    max-height: 30px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    flex-grow: 1;
+    transition-duration: 0.5s;
+}
+
+.container_header:hover {
+    background-color: rgb(205, 195, 195);
+    color: rgb(26, 25, 25);
+}
+
+.border {
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+.module_control {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    align-self: auto;
+}
+
+#ControlActionIcon {
+    background-image: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=4154780841294389669&guid=59783a2dcc095064d962b2c613f3c270&type=3#arrow-down");
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 30px;
+    width: 20px;
+    height: 20px;
+    max-height: 30px;
+}
+
+#HeaderName {
+    -unity-text-align: middle-center;
+}
+
+#ControlActionName {
+    -unity-text-align: middle-center;
+}
+
+.horizontal_divider {
+    width: 100%;
+    height: auto;
+    background-color: rgb(209, 209, 209);
+    max-height: 3px;
+    flex-grow: 1;
+}
+
+.hidden {
+    visibility: visible;
+    display: none;
+    overflow: visible;
+    width: 0;
+    height: 0;
+}
+
+#ContainerContent {
+    max-height: 600px;
+    min-height: 300px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+#AgentsList {
+    flex-grow: 1;
+}
+
+.agent_camera_view {
+    background-image: none;
+    -unity-background-scale-mode: scale-to-fit;
+    flex-grow: 1;
+}
+
+#AgentCameraViewWrapper {
+    flex-grow: 1;
+}
+
+#ObservationLabel {
+    -unity-text-align: middle-center;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+#Observation {
+}
+
+#ViewWrapper {
+}
+
+#OtherViewWrapper {
+    background-size: 200px 100%;
+    flex-grow: 1;
+    min-width: auto;
+    width: 33%;
+    height: 50%;
+}
+
+#OtherObservationsWrapper {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#ContainerContent {
+    background-color: rgba(47, 39, 39, 0.62);
+    height: auto;
+}
+
+#GodViewObservation {
+    background-image: none;
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 256px;
+    min-height: 256px;
+}
+
+#ForwardViewObservation {
+    background-image: none;
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 84px;
+    min-height: 84px;
+}
+
+#BackViewObservation {
+    background-image: none;
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 84px;
+    min-height: 84px;
+}
+
+#LeftViewObservation {
+    background-image: none;
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 84px;
+    min-height: 84px;
+}
+
+#RightViewObservation {
+    background-image: none;
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 84px;
+    min-height: 84px;
+}
+
+#AboveViewObservation {
+    background-image: none;
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 84px;
+    min-height: 84px;
+}
+
+#UnderViewObservation {
+    background-image: none;
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 84px;
+    min-height: 84px;
+}

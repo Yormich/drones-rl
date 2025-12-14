@@ -1,0 +1,25 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/SharedAssets/UI/ContinuousUI/Styling/AgentVisualRepresentationCon.uss?fileID=7433441132597879392&amp;guid=63dddbc7f8ea4f64d8d40c8fabf8e74c&amp;type=3#AgentVisualRepresentationCon" />
+    <ui:VisualElement name="AgentObservationContainer" class="border shadow observation_container" style="max-height: 480px; min-height: auto; height: auto;">
+        <ui:VisualElement name="ContainerHeader" class="container_header">
+            <ui:VisualElement name="HeaderNameWrapper">
+                <ui:Label text="Visual Observation Of Agent 0" name="HeaderName" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ModuleControlContainer" class="module_control">
+                <ui:VisualElement name="ControlActionIcon" />
+                <ui:Label text="Hide" name="ControlActionName" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ContainerContent" style="max-height: 550px; min-height: 300px;">
+            <ui:VisualElement class="horizontal_divider" />
+            <ui:VisualElement name="AgentCameraViewWrapper" style="flex-direction: row;">
+                <ui:VisualElement name="TrailingViewWrapper">
+                    <ui:VisualElement name="ViewWrapper" style="flex-grow: 1;">
+                        <ui:Label text="Drone trailing camera" name="ObservationLabel" />
+                        <ui:VisualElement name="AgentTrailingViewObservation" class="agent_camera_view" style="margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

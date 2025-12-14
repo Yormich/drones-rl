@@ -1,0 +1,50 @@
+:root {
+    -unity-font-definition: resource('FlatSkin/Font/Roboto-Black');
+    color: rgb(243, 243, 243);
+}
+
+#AgentListItem {
+    max-height: 90px;
+    flex-grow: 1;
+    background-color: rgb(59, 56, 56);
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-left-color: rgb(47, 45, 45);
+    border-right-color: rgb(47, 45, 45);
+    border-top-color: rgb(47, 45, 45);
+    border-bottom-color: rgb(47, 45, 45);
+    transition-duration: 0.5s;
+    min-height: initial;
+    max-width: none;
+    min-width: 350px;
+    height: 80px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#AgentName {
+    -unity-font-definition: resource('FlatSkin/Font/Roboto-Black');
+    font-size: 14px;
+    -unity-font-style: bold;
+}
+
+#AgentEnvironmentLocation {
+    -unity-font-style: normal;
+}
+
+#AgentListItem:hover {
+    background-color: rgb(66, 58, 58);
+    color: rgb(255, 255, 255);
+}
