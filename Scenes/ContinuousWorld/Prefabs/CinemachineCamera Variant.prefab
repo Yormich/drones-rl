@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5039590804274633995
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2015
+      objectReference: {fileID: 0}
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000004889425
+      objectReference: {fileID: 0}
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000020252656
+      objectReference: {fileID: 0}
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226130059789345480, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792394542371896093, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: m_Name
+      value: CinemachineCamera Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938112403030640976, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
+      propertyPath: Lens.FarClipPlane
+      value: 10000
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 586030d6a0176554c98bd4f898cd2171, type: 3}
