@@ -1,0 +1,116 @@
+{
+    "grid_size": {
+        "lesson_num": 2
+    },
+    "num_obstacles": {
+        "lesson_num": 5
+    },
+    "DroneGrid2D": {
+        "checkpoints": [
+            {
+                "steps": 199991,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-199991.onnx",
+                "reward": null,
+                "creation_time": 1763917910.9181738,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-199991.pt"
+                ]
+            },
+            {
+                "steps": 299913,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-299913.onnx",
+                "reward": 0.8846634492278099,
+                "creation_time": 1763918053.7642338,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-299913.pt"
+                ]
+            },
+            {
+                "steps": 399976,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-399976.onnx",
+                "reward": 0.9541506345073382,
+                "creation_time": 1763918207.5139213,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-399976.pt"
+                ]
+            },
+            {
+                "steps": 499865,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-499865.onnx",
+                "reward": 0.877534953030673,
+                "creation_time": 1763918376.4462779,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-499865.pt"
+                ]
+            },
+            {
+                "steps": 599998,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-599998.onnx",
+                "reward": 0.9613570267299436,
+                "creation_time": 1763918544.6472695,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-599998.pt"
+                ]
+            },
+            {
+                "steps": 699941,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-699941.onnx",
+                "reward": 0.9694711457599293,
+                "creation_time": 1763918707.5250237,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-699941.pt"
+                ]
+            },
+            {
+                "steps": 799994,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-799994.onnx",
+                "reward": 0.9050029934151098,
+                "creation_time": 1763918865.642879,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-799994.pt"
+                ]
+            },
+            {
+                "steps": 899973,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-899973.onnx",
+                "reward": 0.9335124331362107,
+                "creation_time": 1763919038.200493,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-899973.pt"
+                ]
+            },
+            {
+                "steps": 999995,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-999995.onnx",
+                "reward": 0.9586538275082906,
+                "creation_time": 1763919345.8272192,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-999995.pt"
+                ]
+            },
+            {
+                "steps": 1000053,
+                "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-1000053.onnx",
+                "reward": 0.962019219994545,
+                "creation_time": 1763919345.9751132,
+                "auxillary_file_paths": [
+                    "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-1000053.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000053,
+            "file_path": "results\\ppo-memory-32-curriculum\\DroneGrid2D.onnx",
+            "reward": 0.962019219994545,
+            "creation_time": 1763919345.9751132,
+            "auxillary_file_paths": [
+                "results\\ppo-memory-32-curriculum\\DroneGrid2D\\DroneGrid2D-1000053.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.8.0+cu129"
+    }
+}

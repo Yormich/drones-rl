@@ -1,0 +1,123 @@
+#this neural network config stays the same
+behaviors:
+  DroneGrid2D:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 1024
+      buffer_size: 10240
+      learning_rate: 0.0003
+      beta: 0.0025
+      epsilon: 0.2
+      lambd: 0.95
+      num_epoch: 3
+      shared_critic: False
+      learning_rate_schedule: linear
+      beta_schedule: linear
+      epsilon_schedule: linear
+    network_settings:
+      normalize: False
+      hidden_units: 128
+      num_layers: 2
+      vis_encode_type: simple
+      goal_conditioning_type: hyper
+      deterministic: False
+      # MEMORY CONFIGURATION
+      memory:
+        sequence_length: 8
+        memory_size: 32
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    keep_checkpoints: 10
+    checkpoint_interval: 100000
+    max_steps: 1000000
+    time_horizon: 256
+    summary_freq: 50000
+    threaded: False
+# CURRICULUM CONFIGURATION
+environment_parameters:
+  grid_size:
+    curriculum:
+      - name: SmallGrid
+        completion_criteria:
+          measure: reward
+          behavior: DroneGrid2D
+          signal_smoothing: true
+          min_lesson_length: 100
+          threshold: 0.7
+        value: 16
+      - name: MediumGrid
+        completion_criteria:
+          measure: reward
+          behavior: DroneGrid2D
+          signal_smoothing: true
+          min_lesson_length: 100
+          threshold: 0.8
+        value: 32.0
+      - name: LargeGrid
+        value: 64.0
+  num_obstacles:
+    curriculum:
+      - name: NoObstacles
+        completion_criteria:
+          measure: reward
+          behavior: DroneGrid2D
+          signal_smoothing: true
+          min_lesson_length: 100
+          threshold: 0.5
+        value: 0.0
+      - name: FewObstacles
+        completion_criteria:
+          measure: reward
+          behavior: DroneGrid2D
+          signal_smoothing: true
+          min_lesson_length: 100
+          threshold: 0.7
+        # value: 32.0
+        value:
+          sampler_type: uniform
+          sampler_parameters:
+            min_value: 20.0
+            max_value: 40.0
+      - name: AverageObstacles
+        completion_criteria:
+          measure: reward
+          behavior: DroneGrid2D
+          signal_smoothing: true
+          min_lesson_length: 100
+          threshold: 0.8
+        # value: 64.0
+        value:
+          sampler_type: uniform
+          sampler_parameters:
+            min_value: 45.0
+            max_value: 75.0
+      - name: MoreThanAverageObstacles
+        completion_criteria:
+          measure: reward
+          behavior: DroneGrid2D
+          signal_smoothing: true
+          min_lesson_length: 100
+          threshold: 0.8
+        # value: 128.0
+        value:
+          sampler_type: uniform
+          sampler_parameters:
+            min_value: 100.0
+            max_value: 150.0
+      - name: ManyObstacles
+        completion_criteria:
+          measure: reward
+          behavior: DroneGrid2D
+          signal_smoothing: true
+          min_lesson_length: 100
+          threshold: 0.8
+        # value: 256.0
+        value:
+          sampler_type: uniform
+          sampler_parameters:
+            min_value: 200.0
+            max_value: 300.0
+      - name: MaximumObstacles
+        value: 512.0

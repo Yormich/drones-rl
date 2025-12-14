@@ -1,0 +1,29 @@
+{
+    "DroneGrid2D": {
+        "checkpoints": [
+            {
+                "steps": 205418,
+                "file_path": "results\\test-run\\DroneGrid2D\\DroneGrid2D-205418.onnx",
+                "reward": 0.9150470991578343,
+                "creation_time": 1763822401.8145335,
+                "auxillary_file_paths": [
+                    "results\\test-run\\DroneGrid2D\\DroneGrid2D-205418.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 205418,
+            "file_path": "results\\test-run\\DroneGrid2D.onnx",
+            "reward": 0.9150470991578343,
+            "creation_time": 1763822401.8145335,
+            "auxillary_file_paths": [
+                "results\\test-run\\DroneGrid2D\\DroneGrid2D-205418.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.8.0+cu129"
+    }
+}
